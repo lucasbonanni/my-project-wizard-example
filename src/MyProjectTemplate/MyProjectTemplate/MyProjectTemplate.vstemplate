@@ -1,22 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
-  <TemplateData>
-    <Name>MyProjectTemplate</Name>
-    <Description>MyProjectTemplate</Description>
-    <Icon>MyProjectTemplate.ico</Icon>
-    <ProjectType>CSharp</ProjectType>
-    <LanguageTag>csharp</LanguageTag>
-    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-    <SortOrder>1000</SortOrder>
-    <TemplateID>b52e3fac-f75d-4b0f-ba99-aa2fafab08a3</TemplateID>
-    <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>MyProjectTemplate</DefaultName>
-    <ProvideDefaultName>true</ProvideDefaultName>
-  </TemplateData>
-  <TemplateContent>
-    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
-    </Project>
-  </TemplateContent>
+	<TemplateData>
+		<Name>MyProjectTemplate</Name>
+		<Description>MyProjectTemplate</Description>
+		<Icon>MyProjectTemplate.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<LanguageTag>csharp</LanguageTag>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>b52e3fac-f75d-4b0f-ba99-aa2fafab08a3</TemplateID>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>MyProjectTemplate</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+		</Project>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>MyProjectWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=f81b4a4f4dfd1378</Assembly>
+		<FullClassName>MyProjectWizard.WizardImplementation</FullClassName>
+	</WizardExtension>
 </VSTemplate>
