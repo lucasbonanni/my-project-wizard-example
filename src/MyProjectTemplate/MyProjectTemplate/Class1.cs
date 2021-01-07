@@ -5,7 +5,11 @@ $endif$using System.Text;
 
 namespace $safeprojectname$
 {
-	public class Class1
+    public class Class1
 {
+    static void Main(string[] args)
+    {
+        Console.WriteLine("$custommessage$");
+    }
 }
 }
